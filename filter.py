@@ -29,8 +29,8 @@ def comp(dig1, dig2, threshold=None):
         if threshold is not None and bits > threshold: break
     return 128 - bits
 
-spam = ["Hey bob! Nice to meet you!", "Hey Jane! How is your day? Wanna relax a bit?", "Cute kittens are in danger! Donate 0.3 bitcoin to save them!"]
-spamhexes = [str(spam[0]).encode('hex'), str(spam[1]).encode('hex'), str(spam[2]).encode('hex')]
+spam_ex = ["Hey bob! Nice to meet you!", "Hey Jane! How is your day? Wanna relax a bit?", "Cute kittens are in danger! Donate 0.3 bitcoin to save them!"]
+spamhexes = [str(spam_ex[0]).encode('hex'), str(spam_ex[1]).encode('hex'), str(spam_ex[2]).encode('hex')]
 spamhashes = [str(Nilsimsa(spamhexes[0])).encode('hex'), str(Nilsimsa(spamhexes[1])).encode('hex'), str(Nilsimsa(spamhexes[2])).encode('hex')]
 msges = []
 score = 0
